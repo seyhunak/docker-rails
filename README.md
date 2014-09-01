@@ -24,6 +24,15 @@ MAINTAINER seyhunak(seyhunak@gmail.com)
 EXPOSE 80
 ```
 
+## Using with Kitematic
+
+![Kitematic](https://kitematic.com/) is a OSX applications, it provides easiest way to start using Docker on your Mac.
+Download and Install on your Mac.
+
+To use as image, just download the repository master branch. Open Kitematic > Create new Image > Select docker-rails folder.
+Click "Create Image".
+
+
 ## Build Phase
 
 ```
@@ -55,7 +64,7 @@ Place "unicorn.rb" we provided to `config/unicorn.rb`
 ...
 ADD unicorn.rb /home/rails/config/unicorn.rb
 ...
-```
+
 
 ### Foreman
 
