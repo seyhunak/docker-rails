@@ -1,4 +1,5 @@
-## docker-rails (Complete Docker configuration for Rails applications)
+# docker-rails
+## Complete Docker configuration for Rails applications
 
 Easy usable, complete docker configuration for rails applications. Less configuration, all-in-one stack.
 
