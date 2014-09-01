@@ -2,6 +2,8 @@
 
 Easy usable, complete docker configuration for rails applications. Less configuration, all-in-one stack.
 
+![Docker](http://blog.docker.com/wp-content/uploads/2013/08/KuDr42X_ITXghJhSInDZekNEF0jLt3NeVxtRye3tqco.png)
+
 ## What's included?
 
 - ruby, rbenv, rails, node.js (for asset pipeline), git
