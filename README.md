@@ -11,7 +11,7 @@ Easy usable, complete docker configuration for rails applications. Less configur
 - beanstald, apache solr
 - mysql, redis
 
-# Usage
+## Usage
 
 - Clone the repository from the master branch.
 - Create `Dockerfile` to your project and paste below code.
@@ -34,9 +34,9 @@ $ docker build -t your/app .
 $ docker run -d -p 80:80 -e SECRET_KEY_BASE=secretkey your/project
 ```
 
-# Customize Nginx, Unicorn, foreman config
+## Customize Nginx, Unicorn, foreman config
 
-## Nginx
+### Nginx
 
 ```
 ### Dockerfile
@@ -48,7 +48,7 @@ ADD nginx_sites.conf /etc/nginx/sites-enabled/default
 ...
 ```
 
-## Unicorn
+### Unicorn
 We added default unicorn configuration, so add your own custom unicorn configuration.
 Place "unicorn.rb" we provided to `config/unicorn.rb`
 
@@ -56,6 +56,14 @@ Place "unicorn.rb" we provided to `config/unicorn.rb`
 ADD unicorn.rb /home/rails/config/unicorn.rb
 ...
 ```
-## Foreman
+
+### Foreman
 
 Place "Procfile we provided to your app root.
+
+
+## License
+
+Copyright (c) 2014 Seyhun Akyürek
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
