@@ -9,7 +9,7 @@ Easy usable, complete docker configuration for rails applications. Less configur
 
 - ruby, rbenv, rails, node.js (for asset pipeline), git
 - nginx, unicorn, foreman
-- beanstald, apache solr
+- beanstalkd, apache solr
 - mysql, redis
 
 ## Usage
